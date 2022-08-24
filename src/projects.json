@@ -1,14 +1,15 @@
 [
     {
-        "name":"Saltdew Valley",
-        "language":"Python",
-        "libraries":"RayLib",
-        "description":"A parody of Stardew Valley, but with the imminent threat of a snail always on your tail! I built it on a team of four people as part of a course about coding with classes",
-        "dateStarted":"3/24/22",
-        "dateCompleted":"4/4/22",
-        "links":["https://github.com/Bdavis49382/Saltdew_Valley"],
-        "forSchool":true,
-        "img":"images/Saltdew_Valley.png"
+
+        "name":"Wordfight",
+        "language":["Javascript", "React"],
+        "libraries":"Google Firebase",
+        "description":"Based on a multiplayer word game, this React app was my way of using firebase and react together to make my first multiplayer experience from different devices",
+        "dateStarted":"8/11/22",
+        "dateCompleted":"WIP",
+        "links":[],
+        "forSchool":false,
+        "img":"images/Wordfight.png"
     },
     {
 
@@ -24,18 +25,6 @@
     },
     {
 
-        "name":"Wordfight",
-        "language":["Javascript", "React"],
-        "libraries":"Google Firebase",
-        "description":"Based on a multiplayer word game, this React app was my way of using firebase and react together to make my first multiplayer experience from different devices",
-        "dateStarted":"8/11/22",
-        "dateCompleted":"WIP",
-        "links":[],
-        "forSchool":false,
-        "img":"images/Wordfight.png"
-    },
-    {
-
         "name":"Boggle",
         "language":["Javascript","HTML","CSS","Python"],
         "libraries":"Dictionary API",
@@ -47,13 +36,24 @@
         "img":"images/Boggle.png"
     },
     {
+        "name":"Saltdew Valley",
+        "language":"Python",
+        "libraries":"RayLib",
+        "description":"A parody of Stardew Valley, but with the imminent threat of a snail always on your tail! I built it on a team of four people as part of a course about coding with classes",
+        "dateStarted":"3/24/22",
+        "dateCompleted":"4/4/22",
+        "links":["https://github.com/Bdavis49382/Saltdew_Valley"],
+        "forSchool":true,
+        "img":"images/Saltdew_Valley.png"
+    },
+    {
 
         "name":"TypeFast!",
         "language":["Python"],
         "libraries":"Tkinter",
         "description":"As a final project in a class about python functions, I made a typing test using python and tkinter.",
-        "dateStarted":"4/22",
-        "dateCompleted":"4/22",
+        "dateStarted":"3/22",
+        "dateCompleted":"3/22",
         "links":[],
         "forSchool":true,
         "img":"images/TypeFast.png"
