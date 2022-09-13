@@ -74,7 +74,7 @@ function App() {
       <div className="projects">
         {Array.from(projects).sort(compareFunction).filter(project =>(((view==="School") === project.forSchool)||view==="Both")).map((project,index)=> {
           
-          return <Project index={index} key={project.name} view={view} project={project} />
+          return <Project index={index} key={project.name} project={project} />
         })}
       </div>
     </div>
