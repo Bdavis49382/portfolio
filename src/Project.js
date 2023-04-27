@@ -1,7 +1,7 @@
 import React from 'react';
 const schoolColor = "#C3C4C0";
 const personalColor = "#DB5461";
-function Project({project,index}) {
+function Project({project,view,index}) {
     const {name,language,libraries,description,dateStarted,dateCompleted,links,img,forSchool} = project;
     const boxStyles = {
         textAlign:"left",
