@@ -2,20 +2,25 @@ import './App.css';
 import React,{useState, useEffect} from 'react';
 import Project from './Project';
 import projects from './projects.json';
-const colors = {Personal: "#B3CDD1",School: "#577399",Both:"white"}
+import Image from './images/hero.jpg';
+const colors = {Personal: "#B3CDD1",School: "#577399",Both:"rgb(219,213,205)"}
 function App() {
-  const [view,setView] = useState('School');
+  const [view,setView] = useState('Both');
   const [sortBy,setSortBy] = useState('Date');
   const [isShown,setIsShown] = useState(false);
   
   const headerStyles = {
     backgroundColor: colors[view],
-    minHeight: "80vh",
-    textAlign: "center",
-    fontSize: "calc(10px + 2vmin)",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center"
+    minHeight: "40vh",
+    // textAlign: "left",
+    // fontSize: "calc(10px + 2vmin)",
+    // display: "flex",
+    // flexDirection: "row",
+    // justifyContent: "left",
+    display:"grid",
+    gridTemplateColumns:"1fr 5fr 4fr",
+    gridTemplateRows:"1fr 1fr 1fr",
+    justifyItems:"left"
   }
   const buttonStyles = {
     margin: "0 auto",
@@ -33,13 +38,17 @@ function App() {
       return 0;
     }
   }
+
   return (
     <div className="App">
       <header style={headerStyles}>
-        <h1>Ben Davis</h1>
-        <h4>Project Portfolio</h4>
-      </header>
-      <div style={{margin:"0 auto",width:"300px"}}>
+        <h1 style={{gridColumn:"2/3",paddingTop:10}}>Ben Davis</h1>
+        <h2 style={{fontStyle:'italic',gridColumn:"2/3",gridRow:"2/3"}}>Project Portfolio</h2>
+          <img src={Image} alt="hero" style={{
+            gridColumn: "3/4",
+            gridRow:"1/4",
+            width:"100%"}}/>
+      <div style={{gridColumn:"1/2"}}>
         <button 
           onClick={event => setView(event.target.innerText)} 
           style={{...buttonStyles,backgroundColor:colors["School"]}}>
@@ -56,6 +65,7 @@ function App() {
           Both
         </button>
       </div>
+      </header>
       <div onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
           style={{margin:"0 auto",display:"inline-block"}}>
